@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a Maven Project Object Model (POM) file that defines your project -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- Specifies which version of the POM model this file uses -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- The unique identifier for your organization or project -->
+    <groupId>xyz.akat</groupId>
+    <!-- The name of your project -->
+    <artifactId>Aphoria</artifactId>
+    <!-- The current version of your project -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Project-wide settings and configuration values -->
+    <properties>
+        <!-- The Java version used to compile your source code -->
+        <maven.compiler.source>21</maven.compiler.source>
+        <!-- The Java version your compiled code should be compatible with -->
+        <maven.compiler.target>21</maven.compiler.target>
+        <!-- Character encoding used for source files -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <exec.mainClass>xyz.akat.Main</exec.mainClass>
+    </properties>
+
+    <!-- External libraries that your project needs to work -->
+    <dependencies>
+        <!-- A single external library your project depends on -->
+        <dependency>
+            <!-- Who created this library -->
+            <groupId>com.discord4j</groupId>
+            <!-- The name of the library -->
+            <artifactId>discord4j-core</artifactId>
+            <!-- Which version of the library to use -->
+            <version>3.2.7</version>
+        </dependency>
+    </dependencies>
+</project>
